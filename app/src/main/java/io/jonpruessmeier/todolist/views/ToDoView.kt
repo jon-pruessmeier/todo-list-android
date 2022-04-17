@@ -20,8 +20,9 @@ class ToDoView constructor (todo: ToDo, context: Context?) : LinearLayout(contex
         checkBox.isChecked = todo.isChecked;
         textView.setTextColor(Color.BLACK);
 
-        this.addView(textView);
         this.addView(checkBox);
+        this.addView(textView);
+
         this.orientation = LinearLayout.HORIZONTAL;
         this.setBorder();
     }
